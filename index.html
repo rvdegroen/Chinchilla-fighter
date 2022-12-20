@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinchilla Fighter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <img src="./images/enemyAttack.png" class="attackImg" alt="">
+
+    <img src="./images/playerFlee.svg" alt="Player flee" class="playerFlee" height="300px">
+    <div class="menuDiv">
+        <h1>Chinchilla Fighter</h1>
+        <button class="menuButton">Start Game</button>
+        <!--<button class="menuPlayAgain">Play Again</button> hoe verander ik de tekst van start game > play again?-->
+    </div>
+
+
+    <!--bovenaan het sherm zie je coins en wat er gebeurd-->
+    <div class="coinBalk">
+        <img src="./images/coin.svg" alt="coins" height="35px" class="coinsIcon">
+        <p class="coins"></p>
+    </div>
+    
+    <p class="gameTekst">Ik val aan?</p>
+    <!--ik wil geen display flex op mijn buttons en p buiten de div zetten, maar wel om de twee divs. Op deze manier kan de site "responsive" blijven. -->
+    <div class="divPlayer2">
+            <label for="health2">Health Enemy</label>
+            <progress id="health2" max="100" value="100"> 100% </progress>
+            <img src="./images/enemy.svg" alt="player2" height= "250px" class="imgPlayer2">
+            <!--
+            <img src="./images/enemyAttack.svg" alt="enemy attack" height= "250px" class="imgPlayer2Attack">
+            <img src="./images/enemyAttacked.svg" alt="enemy attacked" height="250px" class="imgPlayer2Attacked">
+            <img src="./images/enemyDead.svg" alt="enemy dead" height="250px" class="enemyDead"> 
+            -->
+    </div>
+
+    <div class="divPlayer1"> 
+            <label for="health1">Health Player</label>
+            <progress id="health1" max="100" value="100"> 100% </progress>
+            <img src="./images/player.svg" alt="player1" height= "300px" class="imgPlayer1">
+    </div>
+
+    <div class="divButtons">
+        <!--span elementen, omdat deze geen semanthieke betekenis hebben. Zo kan ik 2 lijnen op een button plaatsen--> 
+        <button class="fight">
+            <span> <img src="./images/coin.svg" width="30px" alt="coins"> -50</span>
+            <span><img src="./images/iconFight.svg" alt="fight" height="40px" ></span>
+            <span>Fight</span>
+        </button>
+
+        <button class="heal" name="Heal button costs 50 coins">
+            <span> <img src="./images/coin.svg" width="30px" alt="coins"> -50</span>
+            <span><img src="./images/iconHeal.svg" alt="heal" height="40px" ></span>
+            <span>Heal</span>
+        </button>
+
+        <button class="flee" name="Flee button costs 0 coins">
+            <span> <img src="./images/coin.svg" width="30px" alt="coins"> 0</span>
+            <span><img src="./images/iconFlee.svg" alt="flee" height="40px" ></span>
+            <span>Flee</span>
+        </button>
+    </div>
+
+    <div class="none"></div>
+    <audio src=""></audio>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>

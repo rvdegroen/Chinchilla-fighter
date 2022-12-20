@@ -1,0 +1,147 @@
+html,body { 
+    padding: 0;
+    margin: 0;
+    height: 100%;
+} 
+
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    font-size: 1.5em;
+    }
+
+p {
+    margin: 0;
+    padding-left: 10px;
+}    
+
+/*div van de coins*/
+.coinBalk {
+    position: fixed;
+    display: flex;
+    top: 1%;
+    left: 20%;
+    background: rgb(70, 70, 70);
+    border-radius: 30px;
+    padding: 5px 10px;
+    color: goldenrod;
+}
+
+/*top tekst aan het beeldscherm wat er in de game gebeurd*/
+.gameTekst {
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-weight: normal;
+    
+}
+
+/*health balk van de gebruiker en de computer*/
+progress {
+    width: 100%;
+    }
+
+/*positioning van de healthbars in de div waar de character zich in bevindt*/
+.divPlayer1, .divPlayer2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/*position van de characters die zich nu altijd op zoveel % van het scherm zich bevinden*/
+.divPlayer1 {
+    position: fixed;
+    left: 20%;
+    bottom: 10%;
+}
+
+.divPlayer2 {
+    position: fixed;
+    right: 20%;
+    top: 20%;
+    color: rgb(207, 0, 0);
+}
+
+/*styling voor de buttons*/
+button {
+    font-size: 0.9em;
+    border: 0;
+    border-radius:10px;
+    padding: 20px 10px;
+    margin: 5px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+
+}
+
+/*zodat ik 2 lijnen tekst in mijn button kan hebben*/
+button > span {
+    display: block;
+    padding: 3px;
+}
+
+
+/*positioning van de buttons*/
+.divButtons {
+    position: fixed;
+    bottom: 10%;
+    right: 20%;
+}
+
+
+/*psuedo classes voor de buttons*/
+button:hover {
+    color: goldenrod;
+}
+
+button:active {
+    opacity: 90%;
+}
+
+/*als de button .disabled is, dan wordt opacity 50%*/
+button:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
+/*menu opties
+.menuDiv {
+    display: none;
+}
+*/
+.menuDiv {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    padding: 10px;
+}
+
+.menuButton {
+    width: 100%;
+    top: 40%;
+}
+
+.attackImg {
+    position: fixed;
+    height: 14%;
+    left: 50%;
+    bottom: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden {
+    visibility:hidden
+}
+
+.playerFlee {
+    position: fixed;
+    bottom: 5%;
+    left: 35%;
+}
+
